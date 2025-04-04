@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
@@ -27,11 +28,17 @@ public class RaschetBallonaFieldController {
     private TextField sRasch;
 
     @FXML
+    private Label sRasch1;
+
+
+
+    @FXML
     void resSrasch() {
 
         double num=Double.parseDouble(dNar.getText())*Double.parseDouble(pPab.getText());
 
-        sRasch.setText("Sp= "+num);
+//        sRasch.setText("Sp= "+num);
+        sRasch1.setText("Sp= "+num);
 
 
     }

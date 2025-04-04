@@ -8,9 +8,9 @@
 
 <AnchorPane fx:id="raschetSp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.sosydraschet.RaschetBallonaFieldController">
    <children>
-      <TextField fx:id="pPab" layoutX="241.0" layoutY="75.0" prefHeight="25.0" prefWidth="82.0" />
-      <TextField fx:id="dNar" layoutX="241.0" layoutY="114.0" prefHeight="25.0" prefWidth="82.0" />
-      <TextField fx:id="sRasch" layoutX="241.0" layoutY="160.0" onAction="#resSrasch" prefHeight="25.0" prefWidth="82.0" />
+      <TextField fx:id="pPab" layoutX="241.0" layoutY="75.0" onAction="#resSrasch" prefHeight="25.0" prefWidth="82.0" />
+      <TextField fx:id="dNar" layoutX="241.0" layoutY="114.0" onAction="#resSrasch" prefHeight="25.0" prefWidth="82.0" />
+      <TextField fx:id="sRasch" layoutX="241.0" layoutY="160.0" prefHeight="25.0" prefWidth="82.0" />
       <Label layoutX="96.0" layoutY="24.0" text="Расчет на прочность баллона" textAlignment="CENTER" textFill="#1403fc">
          <font>
             <Font name="Arial" size="20.0" />
@@ -20,5 +20,6 @@
       <Label layoutX="29.0" layoutY="118.0" text="Диаметр наружный, мм" />
       <Label layoutX="29.0" layoutY="164.0" text="Sp, мм" />
       <Button fx:id="btnRaschet" layoutX="365.0" layoutY="181.0" mnemonicParsing="false" onAction="#resSrasch" text="вычислить" />
+      <Label fx:id="sRasch1" layoutX="268.0" layoutY="206.0" onInputMethodTextChanged="#resSrasch" />
    </children>
 </AnchorPane>
